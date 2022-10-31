@@ -12,6 +12,7 @@ import { FooterComponent } from './commons/footer/footer.component';
 import { HeaderComponent } from './commons/header/header.component';
 import { LeftBarComponent } from './commons/left-bar/left-bar.component';
 import { RightBarComponent } from './commons/right-bar/right-bar.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { RightBarComponent } from './commons/right-bar/right-bar.component';
     LeftBarComponent,
     RightBarComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

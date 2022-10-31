@@ -24,13 +24,10 @@ import { RightBarComponent } from './commons/right-bar/right-bar.component';
     FooterComponent,
     HeaderComponent,
     LeftBarComponent,
-    RightBarComponent
+    RightBarComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

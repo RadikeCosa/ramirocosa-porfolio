@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Home } from '../models/home.model';
 
 @Injectable({
   providedIn: 'root',
@@ -11,7 +10,7 @@ export class HomeService {
 
   constructor(private http: HttpClient) {}
 
-  public getHome(): Observable<Home> {
+  public getHome(): Observable<any> {
     return this.http.get<any>(this.URL);
   }
 }

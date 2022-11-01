@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Home } from 'src/app/models/home.model';
 import { HomeService } from 'src/app/services/home.service';
 
 @Component({
@@ -9,8 +8,6 @@ import { HomeService } from 'src/app/services/home.service';
 })
 export class HomeComponent implements OnInit {
   home: any;
-  house: any;
-
   constructor(public homeService: HomeService) {}
 
   ngOnInit(): void {

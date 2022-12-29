@@ -38,7 +38,7 @@
 
 .visor {
   grid-area: visor;
-  background-color: blue;
+  background-color: var(--blue);
 }
 
 .selector {

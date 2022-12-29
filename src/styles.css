@@ -4,3 +4,10 @@ body,
   height: 100%;
   margin: 0;
 }
+:root {
+  --red: rgba(215, 26, 33, 1);
+  --yellow: rgba(255, 202, 8, 1);
+  --blue: rgba(64, 64, 154, 1);
+  --background: rgba(0, 0, 0, 1);
+  --white: rgba(255, 255, 255, 1);
+}

@@ -1,16 +1,24 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Home } from '../components/home/ihome';
 
 @Injectable({
   providedIn: 'root',
 })
 export class HomeService {
-  URL = 'https://ramiro-porfolio.herokuapp.com/porfolio-service/home/';
+  home: Home = {
+    name: 'Ramiro',
+    surname: 'Cosa',
+    title1: 'algo',
+    title2: 'otra cosa',
+    cap1: 'aclaracion',
+    cap2: 'otra aclaracion',
+  };
 
-  constructor(private http: HttpClient) {}
+  constructor() {}
 
-  public getHome(): Observable<any> {
-    return this.http.get<any>(this.URL);
+  public getHome(): Home {
+    return this.home;
   }
 }
